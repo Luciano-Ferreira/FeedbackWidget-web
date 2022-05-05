@@ -5,9 +5,10 @@ import { Loading } from '../../Loading';
 
 interface ScreenShotButtonProps {
   onScreenshotTook: (screenshot: string) => void;
+  screenshot: string | null;
 }
 
-export function ScreenShotButton({ onScreenshotTook }: ScreenShotButtonProps) {
+export function ScreenShotButton({ onScreenshotTook, screenshot }: ScreenShotButtonProps) {
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false);
 
   async function handleTakeScreenshot() {

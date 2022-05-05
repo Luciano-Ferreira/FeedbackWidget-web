@@ -48,6 +48,7 @@ export function FeedbackContentStep({
         <footer className='flex gap-2 mt-2'>
           <ScreenShotButton 
             onScreenshotTook={setScreenshot}
+            screenshot={screenshot}
           />
 
           <button
