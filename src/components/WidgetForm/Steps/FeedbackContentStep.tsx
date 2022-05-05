@@ -46,7 +46,9 @@ export function FeedbackContentStep({
           placeholder="Tell in detail what's going on..."
         />
         <footer className='flex gap-2 mt-2'>
-          <ScreenShotButton />
+          <ScreenShotButton 
+            onScreenshotTook={setScreenshot}
+          />
 
           <button
             type='submit'

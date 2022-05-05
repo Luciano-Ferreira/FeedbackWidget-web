@@ -1,0 +1,4 @@
+tailwind
+html2canvas
+headlessui
+phosphor
