@@ -1,4 +1,5 @@
 import { ArrowLeft } from 'phosphor-react';
+import { useState } from 'react';
 import { FeedbackType, feedbackTypes } from '..';
 import { CloseButton } from '../../CloseButton';
 import { ScreenShotButton } from '../ScreenShotButton';
@@ -12,6 +13,8 @@ export function FeedbackContentStep({
   feedbackType,
   onFeedbackRestartRequested
 }: FeedbackContentStepProps) {
+  const [screenshot, setScreenshot] = useState<string | null>(null)
+
   const feedbackTypeInfo = feedbackTypes[feedbackType]
   return (
     <>
